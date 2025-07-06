@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>ReviseRight</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header id="top">
+      <img class="logo" src="favicon.png" alt="revise right logo" />
+      <div class="heading-content">
+        <h1>Revise Right</h1>
+        <p id="typewriter"></p>
+      </div>
+    </header>
+    <nav class="navbar" aria-label="main-navigation">
+      <ul>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#timer">Timer</a></li>
+        <li><a href="#notes">Notes</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="subjects">
+        <h2>Subjects</h2>
+        <nav aria-label="subjects-navigation-section"></nav>
+      </section>
+      <section id="planner">
+        <h2>Planner</h2>
+        <nav aria-label="planner-navigation-section"></nav>
+      </section>
+      <section id="timer">
+        <h2>Timer</h2>
+        <nav aria-label="timer-navigation-section"></nav>
+      </section>
+      <section id="notes">
+        <h2>Notes</h2>
+        <nav aria-label="Notes-navigation-section"></nav>
+      </section>
+
+      <!-- I need to learn more about dialog element and how it works before I proceed -->
+      <!--
+      <section id="add-task">
+        <button>+ New Tasks</button>
+
+        <dialog id="taskDialog">
+          <form method="dialog">
+            <h3>New Task:</h3>
+            <input
+              type="text"
+              id="taskName"
+              placeholder="enter-new-task"
+              required
+            />
+
+            <menu>
+              <button type="submit">send</button>
+              <button type="button">close</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+    --></main>
+
+    <a href="#top">Back to top</a>
+    <script src="./scripts/typewriterEffect.js"></script>
+  </body>
+</html>
