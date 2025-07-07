@@ -55,3 +55,42 @@ header {
 nav * {
   font-family: "Orbitron", sans-serif;
 }
+
+.navbar {
+  background: rgb(29, 1, 64);
+}
+
+.main-links {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-links li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.main-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  position: relative;
+}
+
+.main-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  background: rgb(197, 125, 255);
+  transition: width 0.5s ease;
+}
+
+.main-links li a:hover::after {
+  width: 100%;
+}
