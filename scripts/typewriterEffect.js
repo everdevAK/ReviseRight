@@ -40,3 +40,11 @@ function typewriterEffect(text) {
 }
 
 typewriterEffect(text);
+
+//Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const main_links = document.querySelector(".main-links");
+
+hamburger.addEventListener("click", () => {
+  main_links.classList.toggle("show");
+});
