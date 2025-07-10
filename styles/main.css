@@ -57,25 +57,42 @@ nav * {
 }
 
 .navbar {
+  height: 60px;
   background: rgb(29, 1, 64);
+  padding: 0.8rem 1rem;
+  position: relative;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font: normal 1.5rem sans-serif;
+  cursor: pointer;
+  display: none;
 }
 
 .main-links {
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
+}
+
+.main-links.show {
+  display: flex;
 }
 
 .main-links li {
   list-style: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .main-links li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
   font-size: clamp(0.8rem, 3vw, 1.1rem);
   position: relative;
 }
@@ -93,4 +110,44 @@ nav * {
 
 .main-links li a:hover::after {
   width: 100%;
+}
+
+/* Responsive Navbar Section */
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-links {
+    display: none;
+    background: rgb(33, 3, 64);
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    top: 100%;
+  }
+
+  .main-links li {
+    width: 100%;
+    padding: 0.7rem 10px;
+    border: 2px solid transparent;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .main-links li:hover {
+    font-weight: bold;
+    border-color: rgb(91, 13, 168);
+  }
+
+  .main-links li:hover a {
+    color: rgb(176, 97, 255);
+  }
 }
