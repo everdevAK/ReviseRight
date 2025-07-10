@@ -146,4 +146,8 @@ nav * {
     font-weight: bold;
     border-color: rgb(91, 13, 168);
   }
+
+  .main-links li:hover a {
+    color: rgb(176, 97, 255);
+  }
 }
