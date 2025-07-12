@@ -141,18 +141,19 @@ nav * {
   .main-links li {
     width: 100%;
     padding: 0.7rem 10px;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     text-align: center;
     overflow: hidden;
   }
 
   .main-links li:hover {
     font-weight: bold;
-    border-color: rgb(91, 13, 168);
+    background: rgb(96, 71, 147);
+    /* border-color: rgb(91, 13, 168); */
   }
 
   .main-links li:hover a {
-    color: rgb(176, 97, 255);
+    /* color: rgb(176, 97, 255); */
   }
 }
 
