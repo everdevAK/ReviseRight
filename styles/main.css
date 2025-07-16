@@ -9,6 +9,7 @@
   --header-bg1: rgb(42, 10, 82);
   --header-bg2: rgb(96, 71, 147);
   --h1-color: rgba(128, 101, 236, 0.908);
+  --h2-underline-color: rgb(176, 133, 211);
   --main-links-hover: rgb(197, 125, 255);
   --hb-main-nav-links-hover: rgb(96, 71, 147);
   --main-text-color: #fff;
@@ -170,19 +171,22 @@ nav * {
 /* All sections */
 
 .main-link-section {
+  background: var(--section-navbar-bg);
   padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
 .main-link-section fieldset {
-  border-color: var(--section-navbar-bg);
-  border-radius: 8px;
+  border: none;
   padding: 10px;
 }
 
 .main-link-section fieldset legend {
   font-family: "Michroma", sans-serif;
-  font-weight: normal;
-  border: 2px solid rgb(60, 8, 112);
+  font-weight: bold;
+  background: rgb(52, 1, 101);
+  color: rgb(215, 167, 255);
   border-radius: 8px;
   width: fit-content;
   padding: 5px 15px;
@@ -191,12 +195,42 @@ nav * {
 }
 
 .main-link-section fieldset nav {
-  background: var(--section-navbar-bg);
+  background: var(--header-bg2);
+  border-radius: 8px;
+  text-align: center;
   padding: 5px 10px;
+  transition: all 0.2s;
+}
+
+.main-link-section fieldset nav:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 5px 8px 4px rgb(26, 1, 49);
 }
 
 .main-link-section fieldset nav .searchBar {
   padding-block: 10px 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBar input,
+.searchBar button {
+  padding: 5px 20px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 5px 8px 1px rgb(64, 44, 76);
+}
+
+.searchBar input {
+  width: 100%;
+}
+
+.searchBar button {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .main-link-section fieldset nav ul {
@@ -210,8 +244,33 @@ nav * {
 }
 
 .main-link-section fieldset .content {
-  border: 2px solid rgb(122, 104, 139);
-  border-radius: 8px;
   padding: 10px;
   margin-block: 10px;
+}
+
+.main-link-section fieldset .content h2 {
+  padding: 4px 22px;
+  margin-left: 22px;
+  border-bottom: 2px solid var(--h2-underline-color);
+  font: normal 1.02rem "Michroma", sans-serif;
+  position: relative;
+}
+
+.main-link-section fieldset .content h2::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: var(--h2-underline-color);
+  position: absolute;
+  bottom: -12px;
+  left: -15px;
+  transform: rotate(50deg);
+}
+
+.main-link-section fieldset .content .sub-content {
+  background: rgba(145, 0, 255, 0.359);
+  border-radius: 8px;
+  padding: 15px 10px;
+  margin: 15px 0px 10px 30px;
+  font-family: "Orbitron", sans-serif;
 }
