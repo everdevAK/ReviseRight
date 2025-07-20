@@ -1,0 +1,43 @@
+/* Heading Section */
+header {
+  height: 120px;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--header-bg1) 30%,
+    var(--header-bg2) 80%
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  object-fit: cover;
+  max-width: 100px;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.heading-content {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-content h1 {
+  margin-bottom: 6px;
+  color: var(--h1-color);
+  font-family: "Michroma", sans-serif;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading-content p {
+  font-family: "Edu SA Hand", cursive;
+  font-size: clamp(0.7rem, 3.5vw, 0.9rem);
+}
