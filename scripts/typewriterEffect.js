@@ -48,3 +48,18 @@ const main_links = document.querySelector(".main-links");
 hamburger.addEventListener("click", () => {
   main_links.classList.toggle("show");
 });
+
+// Note Dialog Section ..............
+const openNoteDialog = document.getElementById("openNoteDialog");
+const dialog = document.getElementById("createNoteDialog");
+const closeNoteDialog = document.getElementById("closeNoteDialog");
+
+openNoteDialog.addEventListener("click", () => {
+  dialog.showModal();
+  document.body.style.filter = "blur(4px)";
+});
+
+closeNoteDialog.addEventListener("click", () => {
+  dialog.close();
+  document.body.style.filter = "blur(0px)";
+});

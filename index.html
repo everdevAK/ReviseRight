@@ -80,8 +80,19 @@
         <fieldset>
           <legend>Notes</legend>
         <div class="noteHeading">
-          <button class="add-notes-btn" onclick="openNoteDialog()">Add new note +</button>
+          <button class="add-notes-btn" id="openNoteDialog">Add new note +</button>
         </div>
+
+        <dialog id="createNoteDialog">
+          <form action="dialog">
+            <input type="text" id="noteTitle" placeholder="Title.." /><br><br>
+            <textarea id="notesArea" rows="5" cols="30"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="closeNoteDialog">Cancel</button>
+          </form>
+        </dialog>
+
         <div class="noteGrid"></div>
       </section>
 

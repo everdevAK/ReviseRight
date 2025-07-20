@@ -57,6 +57,16 @@ html {
   color: white;
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  padding: 10px;
+}
+
 .noteGrid {
   height: 500px;
   background: #888888aa;
