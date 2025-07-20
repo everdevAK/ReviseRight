@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --main-bg: #000;
   --header-bg1: rgb(42, 10, 82);
@@ -26,4 +30,32 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Note Section */
+.noteHeading {
+  background: #8888888f;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noteHeading .add-notes-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.1s ease-in;
+  font-weight: bold;
+}
+
+.add-notes-btn:hover {
+  transform: scale(1.03);
+  background: rgb(54, 5, 100);
+  color: white;
+}
+
+.noteGrid {
+  height: 500px;
 }
