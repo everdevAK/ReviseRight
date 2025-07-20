@@ -290,6 +290,14 @@ main {
     margin: 0px 0px 10px 0px;
   }
 
+  .main-link-section {
+    border-radius: 0px;
+  }
+
+  .main-link-section fieldset {
+    padding: 0px;
+  }
+
   .main-link-section fieldset legend {
     margin-left: 0;
   }
