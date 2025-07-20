@@ -310,6 +310,10 @@ main {
     margin-left: 0;
   }
 
+  .main-link-section fieldset .content h2::before {
+    display: none;
+  }
+
   .main-link-section fieldset .content .sub-content {
     margin: 15px 0px;
   }
