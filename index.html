@@ -85,8 +85,14 @@
 
         <dialog id="createNoteDialog">
           <form action="dialog">
-            <input type="text" id="noteTitle" placeholder="Title.." />
-            <textarea id="notesArea" rows="10" cols="30"></textarea>
+            <span>Title: </span>
+            <div id="noteTitle" contenteditable="true"></div>
+            <textarea
+             id="notesArea" 
+             rows="10" cols="30" 
+             placeholder="Write your notes here..."
+             
+            ></textarea>
 
             <div class="buttons">
               <button type="submit">Submit</button>

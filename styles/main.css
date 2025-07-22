@@ -70,6 +70,10 @@ dialog {
   border-radius: 8px;
 }
 
+dialog span {
+  color: white;
+}
+
 dialog form {
   min-height: 300px;
   display: flex;
@@ -78,13 +82,14 @@ dialog form {
   align-items: center;
 }
 
-dialog form input {
-  border-radius: 8px;
+dialog #noteTitle {
   padding: 4px 12px;
-  border: none;
-  outline: none;
-  font-size: 1.3rem;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 350px;
   text-align: center;
+  background: white;
+  font: normal 1.3rem monospace;
 }
 
 dialog form textarea {

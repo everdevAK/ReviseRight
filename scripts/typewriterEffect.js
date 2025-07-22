@@ -52,6 +52,7 @@ hamburger.addEventListener("click", () => {
 // Note Dialog Section ..............
 const openNoteDialog = document.getElementById("openNoteDialog");
 const dialog = document.getElementById("createNoteDialog");
+const noteTitle = document.getElementById("noteTitle");
 const closeNoteDialog = document.getElementById("closeNoteDialog");
 
 openNoteDialog.addEventListener("click", () => {
@@ -63,6 +64,3 @@ closeNoteDialog.addEventListener("click", () => {
   dialog.close();
   document.body.style.filter = "blur(0px)";
 });
-
-dialog.showModal();
-document.body.style.filter = "blur(4px)";
