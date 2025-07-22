@@ -63,3 +63,6 @@ closeNoteDialog.addEventListener("click", () => {
   dialog.close();
   document.body.style.filter = "blur(0px)";
 });
+
+dialog.showModal();
+document.body.style.filter = "blur(4px)";
